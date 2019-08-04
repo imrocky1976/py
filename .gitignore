@@ -22,4 +22,6 @@ n0208*
 *.log
 log.txt
 download
+.mypy_cache
+.mypy_cache/*
 

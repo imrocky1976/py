@@ -22,4 +22,6 @@ n0208*
 *.log
 log.txt
 download
-
+.idea/
+.mypy_cache/
+.mypy_cache

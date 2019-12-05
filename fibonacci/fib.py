@@ -13,4 +13,5 @@ def curve(fib_seq):
     plt.show()
 
 if __name__ == "__main__":
+    print("curve:")
     curve([i for i in fib(100)])

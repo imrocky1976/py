@@ -25,3 +25,4 @@ download
 .idea/
 .mypy_cache/
 .mypy_cache
+.ipynb_checkpoints/

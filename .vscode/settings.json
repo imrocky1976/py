@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "C:\\Users\\shihj\\AppData\\Local\\Programs\\Python\\Python37\\python.exe",
+    "python.pythonPath": "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python37\\python.exe",
     "python.testing.unittestArgs": [
         "-v",
         "-s",

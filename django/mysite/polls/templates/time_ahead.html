@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}未来时间{% endblock %}
+
+{% block content %}
+<p>{{ hour_offset }} 小时后，时间是 {{ next_time }}。</p>
+<p>用户： {{ user.username }}</p>
+
+{% if messages %}
+<ul class="messagelist">{% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message|capfirst }}</li>
+        {% endfor %}</ul>
+{% endif %}
+
+{% endblock %}

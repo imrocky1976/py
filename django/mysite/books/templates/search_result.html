@@ -1,0 +1,36 @@
+{% extends "book_base.html" %}
+
+{% load book_filters %}
+
+{% block title %}Search result{% endblock %}
+
+{% block head %}Matched book list{% endblock %}
+
+{% block content %}
+<p>Your search for: <strong>{{ query }}</strong></p>
+{% if books %}
+<p>Found {{ books|length }} book{{ books|pluralize }}.</p>
+<table border="1">
+    <thead>
+        <tr>
+            <td>name</td>
+            <td>author</td>
+            <td>publisher</td>
+            <td>publish date</td>
+        </tr>
+    </thead>
+    <tbody>
+        {% for book in books %}
+        <tr>
+            <td>{{ book.name | lower }}</td>
+            <td>{{ book.get_author_name | replace:" " }}</td>
+            <td>{{ book.publisher.name }}</td>
+            <td>{{ book.publication_date }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% else %}
+<p>No books matched your search criteria.</p>
+{% endif %}
+{% endblock %}

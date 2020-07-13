@@ -1,3 +1,5 @@
 {
-    "python.pythonPath": "/usr/local/bin/python3.4"
+    "python.pythonPath": "/usr/local/bin/python3.8",
+    "python.jediEnabled": false,
+    "python.dataScience.jupyterServerURI": "local"
 }

@@ -2,7 +2,7 @@
 	"name": "django",
 	"context": "..",
 	//"dockerFile": "Dockerfile",
-	"image": "django:latest",
+	"image": "python:latest",
 	
     "extensions": [
 		"MS-CEINTL.vscode-language-pack-zh-hans",
@@ -16,7 +16,10 @@
         "python.pythonPath": "/usr/bin/python",
 		"python.linting.enabled": true,
 		"python.linting.pylintEnabled": true,
-		"python.linting.pylintPath": "/usr/local/bin/pylint"
+		"python.linting.pylintPath": "/usr/local/bin/pylint",
+		"terminal.integrated.env.linux": {
+			"PYTHONPATH": "${workspaceFolder}"
+		}
     },
 	
 	"postCreateCommand": "pip install -r requirements.txt -i http://pypi.douban.com/simple --trusted-host pypi.douban.com",

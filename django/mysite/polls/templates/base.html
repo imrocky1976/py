@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <title>{% block title %}{% endblock %}</title>
+</head>
+
+<body>
+    <h1>我的有用的时间戳网站</h1>
+    {% block content %}{% endblock %}
+    {% block footer %}
+    <hr>
+    <p>欢迎访问我的网站</p>
+    <p>作者： {{ author }}</p>
+    {% endblock %}
+</body>
+
+</html>

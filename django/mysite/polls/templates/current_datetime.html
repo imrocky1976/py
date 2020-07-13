@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}当前时间{% endblock %}
+
+{% block content %}
+
+{% if messages %}
+<ul>
+    {% for message in messages %}
+    <li>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+
+<p>当前时间是 {{ now }}。</p>
+{% endblock %}

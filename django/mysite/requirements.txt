@@ -1,4 +1,4 @@
 pylint
 jupyter
 autopep8
-django==2.2.12
+django==2.2.28
